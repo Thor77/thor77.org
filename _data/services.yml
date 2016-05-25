@@ -1,0 +1,11 @@
+- name: Teamspeak 3 (Crapware)
+  url: http://ts.crapwa.re
+  icon: headphones
+
+- name: Teamspeak 3 (Thor77)
+  url: http://ts.thor77.org
+  icon: headphones
+
+- name: Cloud
+  url: https://cloud.crapwa.re
+  icon: cloud

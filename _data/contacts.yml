@@ -1,0 +1,6 @@
+- name: Mail <b>thor77@thor77.org</b>
+  url: mailto:thor77@thor77.org
+  icon: envelope
+
+- name: XMPP <b>thor77@crapwa.re</b>
+  icon: comments
