@@ -5,7 +5,7 @@ title: Thor77
 <h1 align="center">{{ page.title }}</h1>
 <div class="list-group">
   <div class="list-group-item">
-    <h4 class="list-group-item-heading">Projekte</h4>
+    <h4 class="list-group-item-heading">Projects</h4>
     <div class="list-group">
       {% for project in site.data.projects %}
         {% if project.github %}
@@ -21,7 +21,7 @@ title: Thor77
     </div>
   </div>
   <div class="list-group-item">
-    <h4 class="list-group-item-heading">Dienste</h4>
+    <h4 class="list-group-item-heading">Services</h4>
     <div class="list-group">
       {% for service in site.data.services %}
         <a href="{{ service.url }}" class="list-group-item"><i class="fa fa-{{ service.icon }} fa-fw fa-lg"></i>&nbsp; {{ service.name }}</a>
@@ -29,7 +29,7 @@ title: Thor77
     </div>
   </div>
   <div class="list-group-item">
-    <h4 class="list-group-item-heading">Kontakt</h4>
+    <h4 class="list-group-item-heading">Contact</h4>
     <div class="list-group">
       {% for contact in site.data.contacts %}
         <a {% if contact.url %}href="{{ contact.url }}"{% endif %} class="list-group-item"><i class="fa fa-{{ contact.icon }} fa-fw fa-lg"></i>&nbsp; {{ contact.name }}</a>
