@@ -2,6 +2,8 @@
 layout: default
 title: Thor77
 ---
+
+{% capture newtab %}target="_blank"{% endcapture %}
 <h1 class="page-header">{{ page.title }}</h1>
 <div class="list-group">
   <div class="list-group-item">
@@ -9,11 +11,11 @@ title: Thor77
     <div class="list-group">
       {% for project in site.data.projects %}
         {% if project.github %}
-          <a href="https://github.com/{{ site.github_username }}/{{ project.github }}" target="_blank" class="list-group-item">
+          <a href="https://github.com/{{ site.github_username }}/{{ project.github }}" {{ newtab }} class="list-group-item">
             <i class="fa fa-github fa-fw fa-lg"></i>&nbsp; {{ project.github }}
           </a>
         {% else %}
-          <a href="{{ project.url }}" target="_blank" class="list-group-item">
+          <a href="{{ project.url }}" {{ newtab }} class="list-group-item">
             <i class="fa fa-{{ project.icon }} fa-fw fa-lg"></i>&nbsp; {{ project.name }}
           </a>
         {% endif %}
@@ -24,7 +26,7 @@ title: Thor77
     <h4 class="list-group-item-heading">Services</h4>
     <div class="list-group">
       {% for service in site.data.services %}
-        <a href="{{ service.url }}" target="_blank" class="list-group-item"><i class="fa fa-{{ service.icon }} fa-fw fa-lg"></i>&nbsp; {{ service.name }}</a>
+        <a href="{{ service.url }}" {{ newtab }} class="list-group-item"><i class="fa fa-{{ service.icon }} fa-fw fa-lg"></i>&nbsp; {{ service.name }}</a>
       {% endfor %}
     </div>
   </div>
@@ -32,7 +34,7 @@ title: Thor77
     <h4 class="list-group-item-heading">Contact</h4>
     <div class="list-group">
       {% for contact in site.data.contacts %}
-        <a {% if contact.url %}href="{{ contact.url }}" target="_blank"{% endif %} class="list-group-item"><i class="fa fa-{{ contact.icon }} fa-fw fa-lg"></i>&nbsp; {{ contact.name }}</a>
+        <a {% if contact.url %}href="{{ contact.url }}" {{ newtab }}{% endif %} class="list-group-item"><i class="fa fa-{{ contact.icon }} fa-fw fa-lg"></i>&nbsp; {{ contact.name }}</a>
       {% endfor %}
     </div>
   </div>
