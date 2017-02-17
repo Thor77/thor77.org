@@ -2,6 +2,10 @@
   url: https://teamspeak.crapwa.re
   icon: headphones
 
+- name: Pastebin
+  url: https://p.crapwa.re
+  icon: file
+
 - name: Cloud
   url: https://cloud.crapwa.re
   icon: cloud
