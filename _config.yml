@@ -9,7 +9,7 @@
 title: Thor77
 email: thor77@thor77.org
 description: > # this means to ignore newlines until "baseurl:"
-  Jemand aus dem Internet
+  Personal site of Thor77
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thor77.org" # the base hostname & protocol for your site
 github_username: Thor77
