@@ -1,3 +1,7 @@
+- name: Status
+  url: https://status.crapwa.re/
+  icon: life-ring
+
 - name: Teamspeak 3
   url: https://teamspeak.crapwa.re
   icon: headphones
